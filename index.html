@@ -456,7 +456,10 @@
                             <li class="bg-gray-50 p-3 rounded-lg"><span class="font-semibold">3. CRM Automatisierung:</span> (Close, n8n etc.) <span class="tag bg-gray-200 text-gray-800">Emrullah</span></li>
                             <li class="bg-gray-50 p-3 rounded-lg"><span class="font-semibold">4. Finanz-Administration:</span> (Kosten- & Sales-Automatisierung) <span class="tag bg-gray-200 text-gray-800">Abdirahim</span></li>
                             <li class="bg-gray-50 p-3 rounded-lg"><span class="font-semibold">5. Team-Test:</span> (Apps, CRM-Flow läuft fehlerfrei) <span class="tag bg-gray-200 text-gray-800">Hüseyin</span></li>
-                            <li class="bg-gray-50 p-3 rounded-lg"><span class="font-semibold">6. Launchplan:</span> (Marketingplan, Onboarding, Support) <span class="tag bg-gray-200 text-gray-800">Sabri</span> & <span class="tag bg-gray-200 text-gray-800">Emrullah</span></li>
+                            <li class="bg-gray-50 p-3 rounded-lg">
+                                <span class="font-semibold">6. Launchplan:</span> (Marketingplan, Onboarding, Support) <span class="tag bg-gray-200 text-gray-800">Sabri</span>
+                                <br><small class="ml-2 text-gray-600">↳ Unterstützung bei Onboarding & Support durch <span class="font-semibold">Emrullah</span></small>
+                            </li>
                             <li class="bg-gray-50 p-3 rounded-lg"><span class="font-semibold">7. Budgetverfügbarkeit:</span> <span class="tag bg-gray-200 text-gray-800">Emrullah</span></li>
                         </ul>
                     </div>
@@ -636,17 +639,9 @@
         </div>
     </main>
 
-    <footer class="text-center py-8 text-gray-500 text-sm">
-        <p>Erstellt am <span id="creationDate"></span>. Alle Rechte vorbehalten.</p>
-    </footer>
-
     <script>
         lucide.createIcons();
         
-        document.getElementById('creationDate').textContent = new Date().toLocaleDateString('de-DE', {
-            year: 'numeric', month: 'long', day: 'numeric'
-        });
-
         const downloadButton = document.getElementById('download-pdf-btn');
         downloadButton.addEventListener('click', () => {
             const element = document.getElementById('content-to-print');
